@@ -33,6 +33,9 @@ using DotNetTrainingBatch4.ConsoleApp;
 
 AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
 //adoDotNetExample.Read();//
-adoDotNetExample.Create("title", "author", "content");
+//adoDotNetExample.Create("title", "author", "content");//
+//adoDotNetExample.Update(1, "test title", "test author", "test content");
+//adoDotNetExample.Delete(1);
+adoDotNetExample.Edit(3);
 Console.ReadLine();
 
