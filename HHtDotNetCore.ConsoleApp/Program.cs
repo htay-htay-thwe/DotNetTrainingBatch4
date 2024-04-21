@@ -29,7 +29,7 @@ foreach(DataRow dr in dt.Rows)
 }
 Console.ReadKey();
 */
-using DotNetTrainingBatch4.ConsoleApp;
+using hHtDotNetCore.ConsoleApp;
 
 AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
 //adoDotNetExample.Read();//
