@@ -29,13 +29,18 @@ foreach(DataRow dr in dt.Rows)
 }
 Console.ReadKey();
 */
-using DotNetTrainingBatch4.ConsoleApp;
+/*using DotNetTrainingBatch4.ConsoleApp;
 
 AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
-//adoDotNetExample.Read();//
-//adoDotNetExample.Create("title", "author", "content");//
-//adoDotNetExample.Update(1, "test title", "test author", "test content");
-//adoDotNetExample.Delete(1);
+adoDotNetExample.Read();
+adoDotNetExample.Create("title", "author", "content");
+adoDotNetExample.Update(1, "test title", "test author", "test content");
+adoDotNetExample.Delete(1);
 adoDotNetExample.Edit(3);
-Console.ReadLine();
+Console.ReadLine();*/
+using HHTDotNetCore.ConsoleApp;
+
+DapperExample dapperExample = new DapperExample();
+dapperExample.Run();
+
 
