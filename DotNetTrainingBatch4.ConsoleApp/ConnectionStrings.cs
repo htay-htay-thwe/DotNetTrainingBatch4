@@ -15,6 +15,7 @@ namespace HHTDotNetCore.ConsoleApp
             InitialCatalog = "DotNEtTrainingBatch4",
             UserID = "sa",
             Password = "sasa@123",
+            TrustServerCertificate = true,
         };
     }
 }

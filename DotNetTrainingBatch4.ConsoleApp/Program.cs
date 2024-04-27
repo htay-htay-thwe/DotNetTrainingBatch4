@@ -40,7 +40,9 @@ adoDotNetExample.Edit(3);
 Console.ReadLine();*/
 using HHTDotNetCore.ConsoleApp;
 
-DapperExample dapperExample = new DapperExample();
-dapperExample.Run();
+//DapperExample dapperExample = new DapperExample();
+//dapperExample.Run();
 
 
+EFCoreExample eFCoreExample = new EFCoreExample();
+eFCoreExample.Run();
