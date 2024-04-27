@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HHTDotNetCore.ConsoleApp", "DotNetTrainingBatch4.ConsoleApp\HHTDotNetCore.ConsoleApp.csproj", "{76AD310A-4204-4232-B933-D48BBCECA3E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtayHtayThwe_RestAPI", "HtayHtayThwe_RestAPI\HtayHtayThwe_RestAPI.csproj", "{319237A6-BD6D-486E-ADF6-8F299A819ADD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{76AD310A-4204-4232-B933-D48BBCECA3E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76AD310A-4204-4232-B933-D48BBCECA3E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76AD310A-4204-4232-B933-D48BBCECA3E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{319237A6-BD6D-486E-ADF6-8F299A819ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319237A6-BD6D-486E-ADF6-8F299A819ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319237A6-BD6D-486E-ADF6-8F299A819ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319237A6-BD6D-486E-ADF6-8F299A819ADD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
