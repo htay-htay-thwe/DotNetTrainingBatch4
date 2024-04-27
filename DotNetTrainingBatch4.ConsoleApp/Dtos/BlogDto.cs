@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HHTDotNetCore.ConsoleApp
+namespace HHTDotNetCore.ConsoleApp.Dtos
 {
     [Table("Table_1")]
     public class BlogDto
@@ -17,5 +17,5 @@ namespace HHTDotNetCore.ConsoleApp
         public string BlogAuthor { get; set; }
         public string BlogContent { get; set; }
     }
-    public record BlogEntity(int BlodId,string BlogTitle,string BlogContent,string BlogAuthor);
+    public record BlogEntity(int BlodId, string BlogTitle, string BlogContent, string BlogAuthor);
 }

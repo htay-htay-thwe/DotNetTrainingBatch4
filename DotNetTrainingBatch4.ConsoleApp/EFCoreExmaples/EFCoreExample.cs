@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HHTDotNetCore.ConsoleApp.Dtos;
 
-namespace HHTDotNetCore.ConsoleApp
+namespace HHTDotNetCore.ConsoleApp.EFCoreExmaples
 {
     internal class EFCoreExample
     {
@@ -18,9 +19,9 @@ namespace HHTDotNetCore.ConsoleApp
             Delete(2002);
 
         }
-       private void Read()
+        private void Read()
         {
-          AppDbContext db = new AppDbContext();
+            AppDbContext db = new AppDbContext();
             var lst = db.Blogs.ToList();
             foreach (BlogDto item in lst)
             {
@@ -35,8 +36,8 @@ namespace HHTDotNetCore.ConsoleApp
 
         private void Edit(int id)
         {
-            var item = db.Blogs.FirstOrDefault(x=> x.BlodId == id);
-            if(item is null)
+            var item = db.Blogs.FirstOrDefault(x => x.BlodId == id);
+            if (item is null)
             {
                 Console.WriteLine("No Data found.");
                 return;
@@ -63,15 +64,15 @@ namespace HHTDotNetCore.ConsoleApp
         private void Update(int id, string title, string author, string content)
         {
             var item = db.Blogs.FirstOrDefault(x => x.BlodId == id);
-            if(item is null)
+            if (item is null)
             {
                 Console.WriteLine("No data found");
                 return;
             }
             item.BlogTitle = title;
             item.BlogAuthor = author;
-            item.BlogContent =content;
-            int result=db.SaveChanges();
+            item.BlogContent = content;
+            int result = db.SaveChanges();
             string message = result > 0 ? "Saving Successful." : "Saving Failed.";
             Console.WriteLine(message);
 
@@ -91,5 +92,5 @@ namespace HHTDotNetCore.ConsoleApp
             Console.WriteLine(message);
 
         }
-        }
+    }
 }

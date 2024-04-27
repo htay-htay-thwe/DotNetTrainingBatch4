@@ -38,7 +38,7 @@ adoDotNetExample.Update(1, "test title", "test author", "test content");
 adoDotNetExample.Delete(1);
 adoDotNetExample.Edit(3);
 Console.ReadLine();*/
-using HHTDotNetCore.ConsoleApp;
+using HHTDotNetCore.ConsoleApp.EFCoreExmaples;
 
 //DapperExample dapperExample = new DapperExample();
 //dapperExample.Run();

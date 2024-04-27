@@ -1,4 +1,6 @@
 ﻿using Dapper;
+using HHTDotNetCore.ConsoleApp.Dtos;
+using HHTDotNetCore.ConsoleApp.Services;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -7,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HHTDotNetCore.ConsoleApp
+namespace HHTDotNetCore.ConsoleApp.DapperExamples
 {
     internal class DapperExample
     {
@@ -36,7 +38,7 @@ namespace HHTDotNetCore.ConsoleApp
         {
             using IDbConnection db = new SqlConnection(ConnectionStrings.SqlConnectionStringBuilder.ConnectionString);
             var item = db.Query("select * from dbo.Table_1 where blodId = @BlodId", new BlogDto { BlodId = id }).FirstOrDefault();
-            if(item is null)
+            if (item is null)
             {
                 Console.WriteLine("No Data found!");
                 return;
@@ -47,7 +49,7 @@ namespace HHTDotNetCore.ConsoleApp
             Console.WriteLine(item.BlogContent);
         }
 
-        private void Create(string title,string author,string content)
+        private void Create(string title, string author, string content)
         {
             var item = new BlogDto
             {
@@ -64,12 +66,12 @@ namespace HHTDotNetCore.ConsoleApp
            ,@BlogAuthor
            ,@BlogContent)";
             using IDbConnection db = new SqlConnection(ConnectionStrings.SqlConnectionStringBuilder.ConnectionString);
-            int result =  db.Execute(query, item);
+            int result = db.Execute(query, item);
             string message = result > 0 ? "Saving Successful." : "Saving Failed.";
             Console.Write(message);
 
         }
-        private void Update(int id,string title, string author, string content)
+        private void Update(int id, string title, string author, string content)
         {
             var item = new BlogDto
             {

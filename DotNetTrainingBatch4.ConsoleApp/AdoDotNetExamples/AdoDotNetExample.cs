@@ -7,7 +7,7 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DotNetTrainingBatch4.ConsoleApp
+namespace HHTDotNetCore.ConsoleApp.AdoDotNetExamples
 {
     internal class AdoDotNetExample
     {
@@ -113,7 +113,7 @@ namespace DotNetTrainingBatch4.ConsoleApp
             sqlDataAdapter.Fill(dt);
 
             connection.Close();
-            if(dt.Rows.Count == 0)
+            if (dt.Rows.Count == 0)
             {
                 Console.WriteLine("No data found.");
                 return;
