@@ -17,5 +17,5 @@ namespace HtayHtayThwe_RestAPI.Models
         public string? BlogAuthor { get; set; }
         public string? BlogContent { get; set; }
     }
-    public record BlogEntity(int BlodId, string BlogTitle, string BlogContent, string BlogAuthor);
+    //public record BlogEntity(int BlodId, string BlogTitle, string BlogContent, string BlogAuthor);
 }
