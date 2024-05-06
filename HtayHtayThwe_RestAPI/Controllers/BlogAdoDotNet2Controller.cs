@@ -124,32 +124,7 @@ namespace HtayHtayThwe_RestAPI.Controllers
 
         }
 
-        [HttpPut("{id}")]
-        public IActionResult UpdateBlog(int id, BlogModel blog)
-        {
-            string query = @"UPDATE [dbo].[Table_1]
-   SET [BlogTitle] = @BlogTitle
-      ,[BlogAuthor] = @BlogAuthor
-      ,[BlogContent] = @BlogContent
- WHERE BlodId = @BlodId";
-            SqlConnection connection = new SqlConnection(ConnectionStrings.SqlConnectionStringBuilder.ConnectionString);
-            connection.Open();
-            SqlCommand cmd = new SqlCommand(query, connection);
-            cmd.Parameters.AddWithValue("@BlodId", id);
-            cmd.Parameters.AddWithValue("@BlogTitle", blog.BlogTitle);
-            cmd.Parameters.AddWithValue("@BlogAuthor", blog.BlogAuthor);
-            cmd.Parameters.AddWithValue("@BlogContent", blog.BlogContent);
-            connection.Close();
-            int rowsAffected = cmd.ExecuteNonQuery();
-
-            if (rowsAffected == 0)
-            {
-                return NotFound("No data found for the given ID.");
-            }
-            return Ok("update success!");
-
-        }
-
+      
         [HttpPatch("{id}")]
         public IActionResult Patch(int id, BlogModel blog)
         {
