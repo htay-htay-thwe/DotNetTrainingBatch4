@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HHTDotNetCore.ConsoleApp", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HtayHtayThwe_RestAPI", "HtayHtayThwe_RestAPI\HtayHtayThwe_RestAPI.csproj", "{319237A6-BD6D-486E-ADF6-8F299A819ADD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HHTDotNetCore.shared", "HHTDotNetCore.shared\HHTDotNetCore.shared.csproj", "{37976051-F88C-4205-8905-51751C4835CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HHTDotNetCore.shared", "HHTDotNetCore.shared\HHTDotNetCore.shared.csproj", "{37976051-F88C-4205-8905-51751C4835CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HHTDotNetCore_ResetApiWithNLayer", "HHTDotNetCore_ResetApiWithReset\HHTDotNetCore_ResetApiWithNLayer.csproj", "{7995CE5E-2A16-4323-852C-E4EDCEB1B693}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{37976051-F88C-4205-8905-51751C4835CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37976051-F88C-4205-8905-51751C4835CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37976051-F88C-4205-8905-51751C4835CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7995CE5E-2A16-4323-852C-E4EDCEB1B693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7995CE5E-2A16-4323-852C-E4EDCEB1B693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7995CE5E-2A16-4323-852C-E4EDCEB1B693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7995CE5E-2A16-4323-852C-E4EDCEB1B693}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
