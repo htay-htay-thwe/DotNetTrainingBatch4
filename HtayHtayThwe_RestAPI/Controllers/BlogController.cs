@@ -19,7 +19,7 @@ namespace HtayHtayThwe_RestAPI.Controllers
         public IActionResult Read()
         {
             var lst = _context.Blogs.ToList();
-            return Ok("Read");
+            return Ok(lst);
         }
 
         [HttpGet("{id}")]

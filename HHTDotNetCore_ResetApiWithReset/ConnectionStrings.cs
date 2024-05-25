@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HtayHtayThwe_RestAPI
+namespace HHTDotNetCore_ResetApiWithNLayer
 {
     internal static class ConnectionStrings
     {
