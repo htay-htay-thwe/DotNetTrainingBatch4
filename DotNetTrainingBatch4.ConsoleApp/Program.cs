@@ -45,4 +45,4 @@ using HHTDotNetCore.ConsoleApp.EFCoreExmaples;
 
 
 EFCoreExample eFCoreExample = new EFCoreExample();
-eFCoreExample.Run();
+//eFCoreExample.Run();
