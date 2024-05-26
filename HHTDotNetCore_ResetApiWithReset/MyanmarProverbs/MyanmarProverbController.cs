@@ -25,7 +25,7 @@ namespace HHTDotNetCore_ResetApiWithNLayer.MyanmarProverbs
         public async Task<IActionResult> Get()
         {
             var model = await GetDataFromApi();
-            return Ok(model.Tbl_MMProverbs);
+            return Ok(model.Tbl_MmProverbs);
         }
 
 
@@ -46,44 +46,43 @@ namespace HHTDotNetCore_ResetApiWithNLayer.MyanmarProverbs
             return Ok(lst);
         }
 
-        [HttpGet("{titleId}/{proverbId}")]
-        public async Task<IActionResult> Get(string titleName,int proverbId)
+        [HttpGet("{titleName}/{proverbId}")]
+        public async Task<IActionResult> Get(string titleName, int proverbId)
         {
             var model = await GetDataFromApi();
-           var item = model.Tbl_MMProverbs.FirstOrDefault(x => x.TitleId == titleId && x.ProverbId == proverbId);  
+            var item = model.Tbl_MMProverbs.FirstOrDefault(x => x.TitleId == titleId && x.ProverbId == proverbId);
             return Ok(item);
         }
 
-    }
-    public class Tbl_Mmproverbs
-    {
-        public Tbl_Mmproverbstitle[] Tbl_MMProverbsTitle { get; set; }
-        public Tbl_MmproverbsDetail[] Tbl_MMProverbs { get; set; }
-    }
 
-    public class Tbl_Mmproverbstitle
-    {
-        public int TitleId { get; set; }
-        public string TitleName { get; set; }
-    }
+        public class Tbl_Mmproverbs
+        {
+            public Tbl_Mmproverbstitle[] Tbl_MMProverbsTitle { get; set; }
+            public Tbl_MmproverbsDetail[] Tbl_MMProverbs { get; set; }
+        }
 
-    public class Tbl_MmproverbsDetail
-    {
-        public int TitleId { get; set; }
-        public int ProverbId { get; set; }
-        public string ProverbName { get; set; }
-        public string ProverbDesp { get; set; }
-        public object? Tbl_MMProverbs { get; internal set; }
-        public object Tbl_MMProverbsTitle { get; internal set; }
-    }
+        public class Tbl_Mmproverbstitle
+        {
+            public int TitleId { get; set; }
+            public string TitleName { get; set; }
+        }
 
-    public class Tbl_MmproverbsHead
-    {
-        public int TitleId { get; set; }
-        public int ProverbId { get; set; }
-        public string ProverbName { get; set; }
-        public string ProverbDesp { get; set; }
-        public object? Tbl_MMProverbs { get; internal set; }
-        public object Tbl_MMProverbsTitle { get; internal set; }
+        public class Tbl_MmproverbsDetail
+        {
+            public int TitleId { get; set; }
+            public int ProverbId { get; set; }
+            public string ProverbName { get; set; }
+            public string ProverbDesp { get; set; }
+          
+        }
+
+        public class Tbl_MmproverbsHead
+        {
+            public int TitleId { get; set; }
+            public int ProverbId { get; set; }
+            public string ProverbName { get; set; }
+            public string ProverbDesp { get; set; }
+
+        }
     }
 }

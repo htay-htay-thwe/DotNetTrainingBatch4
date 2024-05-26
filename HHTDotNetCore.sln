@@ -21,7 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HHTDotNetCore.PizzaApi", "H
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HHtDotNetCore.ConsoleAppRefitExample", "HHtDotNetCore.ConsoleAppRefitExample\HHtDotNetCore.ConsoleAppRefitExample.csproj", "{2EAB8E10-9B51-4E30-BDC9-6046E1A0E0F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HHTDotNetCore.WindowForms", "HHTDotNetCore.WindowForms\HHTDotNetCore.WindowForms.csproj", "{408EEFB4-B734-4C22-9797-DEA43E85CE72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HHTDotNetCore.WindowForms", "HHTDotNetCore.WindowForms\HHTDotNetCore.WindowForms.csproj", "{408EEFB4-B734-4C22-9797-DEA43E85CE72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HHTDotNetCore.DreamDict", "HHTDotNetCore.DreamDict\HHTDotNetCore.DreamDict.csproj", "{2EC8B2FF-3589-4FB3-90D5-60900384EA28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HHTDotNetCore.DreamDictHttp", "HHTDotNetCore.DreamDictHttp\HHTDotNetCore.DreamDictHttp.csproj", "{8951123C-BEAF-4D74-BF99-F162B7848D39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{408EEFB4-B734-4C22-9797-DEA43E85CE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{408EEFB4-B734-4C22-9797-DEA43E85CE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{408EEFB4-B734-4C22-9797-DEA43E85CE72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC8B2FF-3589-4FB3-90D5-60900384EA28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC8B2FF-3589-4FB3-90D5-60900384EA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC8B2FF-3589-4FB3-90D5-60900384EA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC8B2FF-3589-4FB3-90D5-60900384EA28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8951123C-BEAF-4D74-BF99-F162B7848D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8951123C-BEAF-4D74-BF99-F162B7848D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8951123C-BEAF-4D74-BF99-F162B7848D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8951123C-BEAF-4D74-BF99-F162B7848D39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
