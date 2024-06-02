@@ -1,7 +1,7 @@
-﻿using HHTDotNetCore_ResetApiWithNLayer.db;
+﻿using HHTDotNetCore.NLayer.DataAccess.db;
 using HHTDotNetCore_ResetApiWithNLayer.Models;
 
-namespace HHTDotNetCore.DreamDict.Features.Blog
+namespace HHTDotNetCore.NLayer.DataAccess.Services
 {
     public class DA_Blog
     {

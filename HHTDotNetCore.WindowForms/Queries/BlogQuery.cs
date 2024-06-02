@@ -9,8 +9,16 @@ namespace HHTDotNetCore.WindowForms.Queries
     internal class BlogQuery
     {
         public static string BlogCreate { get; } =
-            @"select * from[dbo].[Tbl_PizzaOrder] po
-            inner join Tbl_pizza p on p.PizzaId = po.PizzaId
-            where PizzaOrderInvoiceNo = @PizzaOrderInvoiceNo";
+            @"INSERT INTO [dbo].[Table_1]
+            ([BlogTitle],[BlogAuthor],[BlogContent]) 
+            VALUES 
+            (@BlogTitle,@BlogAuthor,@BlogContent)";
+        public static string BlogList { get; } = @"SELECT [BlodId]
+      ,[BlogTitle]
+      ,[BlogAuthor]
+      ,[BlogContent]
+  FROM [dbo].[Table_1]";
+
+
     }
 }

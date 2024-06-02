@@ -9,8 +9,8 @@ internal class AppDbContext : DbContext
         {
             optionsBuilder.UseSqlServer(ConnectionStrings.SqlConnectionStringBuilder.ConnectionString);
         }
-       
 
-    }
+    public DbSet<BlogModel> Blogs { get; set; }
+}
 
 

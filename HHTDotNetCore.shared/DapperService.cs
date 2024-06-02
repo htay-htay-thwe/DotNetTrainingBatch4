@@ -45,5 +45,10 @@ namespace HHTDotNetCore.shared
             using IDbConnection db = new SqlConnection(_connectionString);
             return db.Execute(query, param);
         }
+
+        public void Execute()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

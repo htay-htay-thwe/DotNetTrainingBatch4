@@ -36,18 +36,20 @@
             txtAuthor = new TextBox();
             txtContent = new TextBox();
             btnCancel = new Button();
+            btnUpdate = new Button();
             SuspendLayout();
             // 
             // btnSave
             // 
             btnSave.BackColor = SystemColors.MenuHighlight;
             btnSave.ForeColor = SystemColors.Control;
-            btnSave.Location = new Point(346, 328);
+            btnSave.Location = new Point(378, 328);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(112, 34);
             btnSave.TabIndex = 0;
             btnSave.Text = "&Save";
             btnSave.UseVisualStyleBackColor = false;
+            btnSave.Visible = false;
             btnSave.Click += btnSave_Click;
             // 
             // label1
@@ -103,7 +105,7 @@
             // 
             btnCancel.BackColor = Color.Brown;
             btnCancel.ForeColor = SystemColors.ButtonFace;
-            btnCancel.Location = new Point(479, 328);
+            btnCancel.Location = new Point(519, 328);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(112, 34);
             btnCancel.TabIndex = 7;
@@ -111,11 +113,24 @@
             btnCancel.UseVisualStyleBackColor = false;
             btnCancel.Click += btnCancel_Click;
             // 
+            // btnUpdate
+            // 
+            btnUpdate.BackColor = Color.Lime;
+            btnUpdate.ForeColor = SystemColors.ActiveCaptionText;
+            btnUpdate.Location = new Point(378, 328);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(112, 34);
+            btnUpdate.TabIndex = 8;
+            btnUpdate.Text = "&Update";
+            btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click;
+            // 
             // FrmBlog
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnUpdate);
             Controls.Add(btnCancel);
             Controls.Add(txtContent);
             Controls.Add(txtAuthor);
@@ -125,7 +140,8 @@
             Controls.Add(label1);
             Controls.Add(btnSave);
             Name = "FrmBlog";
-            Text = "Form1";
+            Text = "Update";
+            Load += FrmBlog_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -140,5 +156,6 @@
         private TextBox txtAuthor;
         private TextBox txtContent;
         private Button btnCancel;
+        private Button btnUpdate;
     }
 }

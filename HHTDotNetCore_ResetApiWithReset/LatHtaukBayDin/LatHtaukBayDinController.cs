@@ -2,13 +2,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace HHTDotNetCore_ResetApiWithNLayer.Features.LatHtaukBayDin
+namespace HHTDotNetCore_ResetApiWithNLayer.LatHtaukBayDin
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class LaatHtaukBayDinController : ControllerBase
+    public class LatHtaukBayDinController : ControllerBase
     {
-        private LatHtaukBayDin _data;
+
 
         private async Task<LatHtaukBayDin> GetDataAsync()
         {
@@ -23,7 +23,7 @@ namespace HHTDotNetCore_ResetApiWithNLayer.Features.LatHtaukBayDin
             return Ok(model.numberList);
         }
         [HttpGet("{QuestionNo}/{No}")]
-        public async Task<IActionResult> Answers(int questionNo,int no)
+        public async Task<IActionResult> Answers(int questionNo, int no)
         {
             var model = await GetDataAsync();
             return Ok(model.answers.FirstOrDefault(x => x.questionNo == questionNo && x.answerNo == no));

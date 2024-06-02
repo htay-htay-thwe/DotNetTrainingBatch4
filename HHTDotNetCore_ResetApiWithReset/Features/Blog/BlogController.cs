@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using HHTDotNetCore_ResetApiWithNLayer.db;
 using HHTDotNetCore_ResetApiWithNLayer.Models;
 
-namespace HHTDotNetCore_ResetApiWithReset.Features.Blog
+namespace HHTDotNetCore_ResetApiWithNLayer.Features.Blog
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -28,7 +28,7 @@ namespace HHTDotNetCore_ResetApiWithReset.Features.Blog
         [HttpPost]
         public IActionResult Create(BlogModel blog)
         {
-     
+
             var result = _bL_Blog.CreateBlog(blog);
             string message = result > 0 ? "Saving Successful" : "Saving Failed.";
 
@@ -43,7 +43,7 @@ namespace HHTDotNetCore_ResetApiWithReset.Features.Blog
             {
                 return NotFound("No data found.");
             }
-            var result = _bL_Blog.Updateblog(id,blog);
+            var result = _bL_Blog.Updateblog(id, blog);
             string message = result > 0 ? "Saving Successful" : "Saving Failed.";
             return Ok(message);
         }
@@ -58,7 +58,7 @@ namespace HHTDotNetCore_ResetApiWithReset.Features.Blog
             {
                 return NotFound("No data found.");
             }
-            var result =_bL_Blog.DeleteBlog(id);
+            var result = _bL_Blog.DeleteBlog(id);
             string message = result > 0 ? "Deleting Successful" : "Deleting Failed.";
             return Ok(message);
         }

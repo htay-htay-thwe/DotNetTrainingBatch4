@@ -1,4 +1,4 @@
-namespace HHTDotNetCore.WindowForms
+namespace HHTDotNetCore.WinForm
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace HHTDotNetCore.WindowForms
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FrmMainMenu());
+            Application.Run(new Form1());
         }
     }
 }

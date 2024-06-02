@@ -1,7 +1,7 @@
 ﻿using HHTDotNetCore_ResetApiWithNLayer.db;
 using HHTDotNetCore_ResetApiWithNLayer.Models;
 
-namespace HHTDotNetCore_ResetApiWithReset.Features.Blog
+namespace HHTDotNetCore_ResetApiWithNLayer.Features.Blog
 {
     public class DA_Blog
     {
@@ -12,7 +12,7 @@ namespace HHTDotNetCore_ResetApiWithReset.Features.Blog
         }
         public List<BlogModel> GetBlogs()
         {
-           var lst =  _context.Blogs.ToList();
+            var lst = _context.Blogs.ToList();
             return lst;
         }
         public BlogModel GetBlog(int id)
@@ -27,7 +27,7 @@ namespace HHTDotNetCore_ResetApiWithReset.Features.Blog
             return result;
         }
 
-        public int Updateblog(int id,BlogModel requestModel)
+        public int Updateblog(int id, BlogModel requestModel)
         {
             var item = _context.Blogs.FirstOrDefault(x => x.BlodId == id);
             if (item is null) return 0;
@@ -42,7 +42,7 @@ namespace HHTDotNetCore_ResetApiWithReset.Features.Blog
             var item = _context.Blogs.FirstOrDefault(x => x.BlodId == id);
             if (item is null) return 0;
             _context.Blogs.Remove(item);
-          
+
             var result = _context.SaveChanges();
             return result;
         }

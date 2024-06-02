@@ -1,7 +1,7 @@
 ﻿using HHTDotNetCore_ResetApiWithNLayer.db;
 using HHTDotNetCore_ResetApiWithNLayer.Models;
 
-namespace HHTDotNetCore_ResetApiWithNLayer.Features.Blog
+namespace HHTDotNetCore.NLayer.BussinessLogic.Services
 {
     public class BL_Blog
     {
